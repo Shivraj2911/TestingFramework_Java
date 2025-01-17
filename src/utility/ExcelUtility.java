@@ -17,7 +17,7 @@ public class ExcelUtility {
 		
 		String value = null;
 		try {
-			fis = new FileInputStream(location+fileName);
+			fis = new FileInputStream(location+"/"+fileName);
 			System.out.println("<<<<<<< Excel FileFound >>>>>>>");
 			try {
 				XSSFWorkbook wb = new XSSFWorkbook(fis);
